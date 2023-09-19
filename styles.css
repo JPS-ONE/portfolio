@@ -142,6 +142,7 @@ nav ul li a:hover {
 
 
 
+
 /*SE APLICA SOLO A DISPOSITIVOS CAPACES DE HACER HOVER*/
 @media (hover: hover){
     .project-item:hover img {
@@ -203,6 +204,27 @@ nav ul li a:hover {
     80% { transform: translateX(5px); }
     90% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
+}
+
+/*EFECTO CURSOR TYPEWRITTER*/
+
+h4::after {
+    content: '|';
+    animation: blink 0.5s infinite;
+}
+
+/* Estilo para eliminar el cursor cuando la animación ha terminado */
+h4.animation-finished::after {
+    content: none; /* Elimina el contenido del pseudo-elemento */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 
