@@ -138,20 +138,18 @@ nav ul li a:hover {
     display: block;
     z-index: 1;
     transition: transform 0.3s ease, filter 0.3s ease;
+
 }
 
 footer{
-    
+
 }
 
 .redes-sociales{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 8em;
-    padding: 1em 40%;
     margin-top: 2em;
-    
 }
 
 .redes-sociales img{
@@ -315,6 +313,18 @@ h4.animation-finished::after {
 
     .texto h4{
         margin: 1.5em auto;
+    }
+    
+    .redes-sociales{
+        display: flex;
+        justify-content: center;
+        padding: 2em;
+        height: 4em;
+        margin: 1em;
+    }
+
+    .redes-sociales img{
+        width: 3em;
     }
 }
 
