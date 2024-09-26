@@ -69,10 +69,10 @@ nav ul li a:hover {
 }
 
 .texto{   
-
     align-items: center;
-    margin: 0 auto;
+    margin: 1rem auto;
     text-align: center;
+    min-height: 5rem;
     
 }
 
@@ -331,6 +331,11 @@ h4.animation-finished::after {
     }
     .redes-sociales img{
         width: 2.5em;
+    }
+
+    #typewriter{
+        font-size: smaller;
+        box-sizing: content-box;
     }
 }
 
