@@ -9,7 +9,6 @@
     --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
 }
 
-/* Estilos CSS para el menú */
 body {
     font-family: monospace;
     margin: 0;
@@ -63,9 +62,7 @@ nav ul li a:hover {
 
     scale: 1.1;
     filter: drop-shadow(5px 5px 5px rgba(234, 167, 234, 0.503));
-    animation: shake 0.5s ease; /* Aplicar la animación "shake" al hacer hover */
-
-    
+    animation: shake 0.5s ease; 
 }
 
 .texto{   
@@ -73,7 +70,6 @@ nav ul li a:hover {
     margin: 1rem auto;
     text-align: center;
     min-height: 5rem;
-    
 }
 
 .texto h4{
@@ -90,7 +86,6 @@ nav ul li a:hover {
     position: absolute;
     inset: 0;
     z-index: -5;
-
 }
 
 
@@ -101,11 +96,11 @@ nav ul li a:hover {
     padding: 0 20px;
     text-align: center;
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5em;
-
 }
 
  .project-item:hover img {
@@ -113,7 +108,6 @@ nav ul li a:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease; 
     filter: brightness(140%);
-
 }
 
 
@@ -132,23 +126,18 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-footer{
-
-}
 
 .redes-sociales{
     display: flex;
     justify-content: center;
     height: 8em;
     margin-top: 2em;
-    
 }
 
 .redes-sociales img{
     width: 4em;
     margin: 1em;
     filter: drop-shadow(0px 0px 5px #5ca3ffae);
-
 }
 
 
@@ -190,7 +179,7 @@ footer{
     }
 
 }
-/*SE APLICA SOLO A DISPOSITIVOS QUE NO PUEDEN HACER HOVER, COMO SMARTPHONES*/
+/*Se aplica a dispositivos que no son capaces de hacer hover (Smartphone, etc)*/
 @media (hover: none){
     .hover-text {
         text-transform:uppercase;
@@ -203,22 +192,18 @@ footer{
         text-align: center;
         background-color: #57575725;
         padding: 5%;
-        
-
     }
 
     .redes-sociales img{
-        filter: drop-shadow(0px 0px 6px #5a95e3a8);
-        
+        filter: drop-shadow(0px 0px 6px #5a95e3a8);  
     }
 
     .project-item img {
-
         filter: drop-shadow(0px 0px 6px #5a95e373);
     }
 }
 
-/*ANIMACIONES */
+/*Animaciones */
 
 @keyframes shake {
     0% { transform: translateX(0); }
@@ -234,16 +219,15 @@ footer{
     100% { transform: translateX(0); }
 }
 
-/*EFECTO CURSOR TYPEWRITTER*/
-
+/*Efecto cursor typewritter*/
 h4::after {
     content: '|';
     animation: blink 0.5s infinite;
 }
 
-/* Estilo para eliminar el cursor cuando la animación ha terminado */
+/* Eliminar el cursor cuando la animación ha terminado */
 h4.animation-finished::after {
-    content: none; /* Elimina el contenido del pseudo-elemento */
+    content: none; 
 }
 
 @keyframes blink {
@@ -256,15 +240,14 @@ h4.animation-finished::after {
 }
 
 
-
-/* Punto de quiebre para dos columnas */
+/* Breakpoint para dos columnas */
 @media (width < 1290px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .project-item img {
     
-        max-width: 100%; /* Esto asegura que las imágenes no se ensanchen más allá de su tamaño original */
+        max-width: 100%; 
         height: 300px;
     }
     .texto svg{
@@ -272,7 +255,7 @@ h4.animation-finished::after {
     }
 }
 
-/* Punto de quiebre para una columna */
+/* Breakpoint para una columna */
 @media (width < 800px) {
     .projects-grid {
         grid-template-columns: 1fr;
@@ -324,6 +307,7 @@ h4.animation-finished::after {
     }
 }
 
+/*Breakpoint móviles */
 @media (width < 450px) {
     .project-item img {
         
