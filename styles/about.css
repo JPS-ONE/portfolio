@@ -1,0 +1,239 @@
+:root {
+    
+    --color-1: #bfc7d2;
+    --color-2: #a87ffb;
+    --color-3: #5A96E3;
+    --color-4: #10151d;
+    --degradado-1: linear-gradient(to right, var(--color-1), var(--color-2));
+    --degradado-2: linear-gradient(to right, var(--color-2), var(--color-3));
+    --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color:var(--color-4);
+    box-sizing: border-box;
+}
+
+.shine {
+    background-image: radial-gradient(500px 200px at 50% 0%,#111d31 20%,rgba(24, 49, 19, 0) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: -5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8em;
+    max-width: 90%;
+    margin: 1.5rem auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 50px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-3);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+
+    border-color: var(--color-1);
+	text-shadow: 0 0 5px var(--color-3), 0 0 20px var(--color-3), 0 0 30px var(--color-3);
+}
+
+.logo {
+    margin-right: auto;
+
+}
+
+.logo svg{
+    width: 8em;
+    fill: var(--color-3); 
+}
+
+.logo svg:hover{
+
+    scale: 1.1;
+    filter: drop-shadow(5px 5px 5px rgba(59, 170, 255, 0.503));
+    animation: shake 0.5s ease; 
+}
+
+h1{
+    color: var(--color-3);
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar{
+    max-width: 300px;
+    position: absolute;
+    top: 70px;
+}
+
+section{
+    border: 2px solid #bfc7d2;
+    margin: 140px 0;
+    width: 60%;
+    height: fit-content;
+    border-radius: 40px;
+    box-shadow: 0 0 2px 2px #dcdcdc;
+}
+
+h2{
+    color: var(--color-3);
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    color: #bfc7d2;
+    text-align: center;
+    font-size: larger;
+    margin: 0 2rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.skill{
+    flex-basis: calc(20% - 0px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 5rem;
+}
+
+.skill i {
+    font-size: 3em;
+    margin: 10px;
+}
+
+.fa-html5 { color: #e34f26; }
+.fa-css3-alt { color: #264de4; }
+.fa-js { color: #f7df1e; }
+.fa-angular { color: #dd0031; }
+.fa-wordpress { color: #21759b; }
+.fa-microsoft { color: #00a4ef; }
+.fa-node-js { color: #68A063; }
+.fa-leaf { color: #4DB33D; }
+
+.fa-lightbulb { color: #FFA500; }
+.fa-palette { color: #FF1493; }
+.fa-comments { color: #32CD32; }
+.fa-users { color: #4682B4; }
+.fa-tasks { color: #9370DB; }
+.fa-clock { color: #20B2AA; }
+.fa-puzzle-piece { color: #FF6347; }
+.fa-book-open { color: #3CB371; }
+
+
+
+@media (width < 1200px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;  
+    }
+
+    .project-item img {
+        
+        margin: 0 auto;
+        max-width: 90%; 
+
+    }
+
+    header{
+        font-size: 1.4em;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .logo {
+        margin: 1.5em auto;
+    }
+
+    .texto svg{
+        width: 30%;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+        margin-right: 10px;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+
+    .avatar{
+        top: 180px;
+        max-width: 300px;
+    }
+
+    section{
+        border: 2px solid #bfc7d2;
+        margin-top: 160px;
+        width: 90%;
+        height: fit-content;
+        border-radius: 40px;
+    }
+
+    h1{
+        margin-top: 150px;
+    }
+}
+
+/*Breakpoint móviles */
+@media (width < 450px) {
+
+    .avatar{
+        top: 140px;
+        max-width: 200px;
+    }
+
+    section{
+        border: 2px solid #bfc7d2;
+        margin-top: 100px;
+        width: 90%;
+        height: fit-content;
+        border-radius: 40px;
+    }
+    header{
+        margin: 10px;
+    }
+    h1{
+        margin-top: 110px;
+    }
+    .skills{
+    }
+
+    .skill i {
+        font-size: 2rem;
+    }
+}
