@@ -4,6 +4,7 @@
     --color-2: #a87ffb;
     --color-3: #5A96E3;
     --color-4: #10151d;
+    --color-5: #0a2eff;
     --degradado-1: linear-gradient(to right, var(--color-1), var(--color-2));
     --degradado-2: linear-gradient(to right, var(--color-2), var(--color-3));
     --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
@@ -71,7 +72,6 @@ nav ul li a:hover {
 
     scale: 1.1;
     filter: drop-shadow(5px 5px 5px rgba(59, 170, 255, 0.503));
-    animation: shake 0.5s ease; 
 }
 
 h1{
@@ -111,7 +111,7 @@ h2{
 p{
     color: #bfc7d2;
     text-align: center;
-    font-size: larger;
+    font-size: 1.1rem;
     margin: 0 2rem;
 }
 
@@ -157,17 +157,6 @@ p{
 
 
 @media (width < 1200px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 2em;  
-    }
-
-    .project-item img {
-        
-        margin: 0 auto;
-        max-width: 90%; 
-
-    }
 
     header{
         font-size: 1.4em;
@@ -229,8 +218,6 @@ p{
     }
     h1{
         margin-top: 110px;
-    }
-    .skills{
     }
 
     .skill i {

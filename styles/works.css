@@ -1,0 +1,238 @@
+:root {
+    
+    --color-1: #bfc7d2;
+    --color-2: #a87ffb;
+    --color-3: #5A96E3;
+    --color-4: #10151d;
+    --color-5: #0a2eff;
+    --degradado-1: linear-gradient(to right, var(--color-1), var(--color-2));
+    --degradado-2: linear-gradient(to right, var(--color-2), var(--color-3));
+    --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color:var(--color-4);
+}
+
+.shine {
+    background-image: radial-gradient(500px 200px at 50% 0%,#111d31 20%,rgba(24, 49, 19, 0) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: -5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8em;
+    max-width: 90%;
+    margin: 1.5rem auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 50px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+
+    border-color: var(--color-5);
+	text-shadow: 0 0 5px var(--color-5), 0 0 20px var(--color-5), 0 0 30px var(--color-5);
+}
+
+.logo {
+    margin-right: auto;
+
+}
+
+.logo svg{
+    width: 8em;
+    fill: var(--color-1); 
+}
+
+.logo svg:hover{
+    scale: 1.1;
+    filter: drop-shadow(5px 5px 5px #0a2eff);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{   
+    align-items: center;
+    margin: 1rem auto;
+    text-align: center;
+    min-height: 5rem;
+}
+
+.texto h4{
+    max-width: 80%;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 3em auto;
+    color: var(--color-1);
+}
+
+.works-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    border: var(--color-5) solid 2px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--color-5) ;
+}
+
+.work img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+}
+
+.work p{
+    color: #bfc7d2;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.description{
+    margin: 1rem 0;
+}
+
+.tech{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & i{
+        font-size: 3em;
+        margin: 10px;
+    }
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    border: var(--color-5) 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color: #0a2eff;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+
+  button a{
+    text-decoration: none;
+    color: var(--color-1);
+    margin: 0 1rem;
+  }
+
+
+.fa-angular { color: #dd0031; }
+.fa-node-js { color: #68A063; }
+.fa-leaf { color: #4DB33D; }
+
+
+@media (width < 1200px){
+    .work{
+        flex-direction: column ;
+    }
+    header{
+        font-size: 1.4em;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .logo {
+        margin: 1.5em auto;
+    }
+
+    .texto svg{
+        width: 30%;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+        margin-right: 10px;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    h1{
+        margin-top: 150px;
+    }
+}
+
+@media (width < 450px){
+    .work{
+        margin: 1.5rem;
+    }
+
+    .tech{
+        margin: 1rem;
+        & i{
+            font-size: 2.5em;
+        }
+    }
+        header{
+        margin: 10px;
+    }
+}

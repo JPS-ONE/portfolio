@@ -4,6 +4,7 @@
     --color-2: #a87ffb;
     --color-3: #5A96E3;
     --color-4: #10151d;
+    --color-5: #0a2eff;
     --degradado-1: linear-gradient(to right, var(--color-1), var(--color-2));
     --degradado-2: linear-gradient(to right, var(--color-2), var(--color-3));
     --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
