@@ -1,0 +1,195 @@
+:root {
+    
+    --color-1: #bfc7d2;
+    --color-2: #a87ffb;
+    --color-3: #5A96E3;
+    --color-4: #10151d;
+    --color-5: #0a2eff;
+    --color-6: #48D1CC;
+    --degradado-1: linear-gradient(to right, var(--color-1), var(--color-2));
+    --degradado-2: linear-gradient(to right, var(--color-2), var(--color-3));
+    --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color:var(--color-4);
+    box-sizing: border-box;
+}
+
+.shine {
+    background-image: radial-gradient(500px 200px at 50% 0%,#111d31 20%,rgba(24, 49, 19, 0) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: -5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8em;
+    max-width: 90%;
+    margin: 1.5rem auto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 50px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-6);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+
+    border-color: var(--color-1);
+	text-shadow: 0 0 5px var(--color-3), 0 0 20px var(--color-3), 0 0 30px var(--color-3);
+}
+
+.logo {
+    margin-right: auto;
+
+}
+
+.logo svg{
+    width: 8em;
+    fill: var(--color-6); 
+}
+
+.logo svg:hover{
+
+    scale: 1.1;
+    filter: drop-shadow(5px 5px 5px rgba(59, 170, 255, 0.503));
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 2px 4px 12px var(--color-6);
+    padding: 1rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    margin: 5%;
+}
+h1 {
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+    color: #4a5568;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+button {
+    background-color: var(--color-3);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: var(--color-6);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    height: 8em;
+    margin-top: 2em;
+}
+
+.social-links img{
+    width: 4em;
+    margin: 1em;
+    filter: drop-shadow(0px 0px 5px #5ca3ffae);
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@media (width < 1200px) {
+
+    header{
+        font-size: 1.4em;
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .container{
+        margin: 3% 10% 5%;
+    }
+    .logo {
+        margin: 1.5em auto;
+    }
+
+    .texto svg{
+        width: 30%;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+        margin-right: 10px;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+}
+
+/*Breakpoint móviles */
+@media (width < 450px) {
+
+    header{
+        margin: 10px;
+    }
+    .container{
+        margin: 5% 7%;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Si queremos que el logo sea una imagen -->
+            <!-- <img src="resources\logo.svg" alt="Logo"> -->
+            <a href="index.html">
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 711.59 141.22">
+                    <g>
+                      <path class="cls-1" d="m32.29,69.8l62.67,70.2h-32.96L0,70.2,62,0h32.96l-62.67,69.8Z"/>
+                      <path class="cls-1" d="m126.6,140l-18-20.6h77V34.52L227,0v140h-100.4Z"/>
+                      <path class="cls-1" d="m309.66,90.4v49.6h-42V0h155v90.4h-113Zm-.4-69.8v49.2h71.4V20.6h-71.4Z"/>
+                      <path class="cls-1" d="m603,118.8l-31.6,21.2-134.51,1.22,12.9-21.82h99.4l7.4-8.6v-30.6h-110.6V22.2L465,0h134.2l-17.6,20.6h-81l-9,10.2v28.8h111.4v59.2Z"/>
+                      <path class="cls-1" d="m619.52.4h30.08l62,70-62,69.6-31.19-.67,62.44-68.72L619.52.4Z"/>
+                    </g>
+                    <line class="cls-1" x1="317" y1="140" x2="316.6" y2="118.73"/>
+                  </svg>
+            </a>               
+        </div>
+        <nav>
+            <ul>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" style="text-decoration: underline;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="shine"></div>
+        <div class="container">
+            <h1 class="float-animation">Contáctame</h1>
+            <form action="https://formspree.io/f/xblrnkqo" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/JPS-ONE" target="_blank">
+                    <img src="resources\social media icons\github-logo.png" alt="Github">
+                </a>
+                <a href="https://www.linkedin.com/in/jorge-pardo-semp/" target="_blank">
+                    <img src="resources\social media icons\linkedin-logo.png" alt="LinkedIn">
+                </a>   
+            </div>
+        </div>
+    </main>
+</body>
+</html>

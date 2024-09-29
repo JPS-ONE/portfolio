@@ -96,7 +96,7 @@ main{
 .works-list{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .work{
@@ -192,6 +192,9 @@ main{
 
 
 @media (width < 1200px){
+    .works-list{
+        margin-top: 1rem;
+    }
     .work{
         flex-direction: column ;
     }

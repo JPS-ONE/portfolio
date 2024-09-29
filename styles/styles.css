@@ -128,14 +128,14 @@ nav ul li a:hover {
 }
 
 
-.redes-sociales{
+.social-links{
     display: flex;
     justify-content: center;
     height: 8em;
     margin-top: 2em;
 }
 
-.redes-sociales img{
+.social-links img{
     width: 4em;
     margin: 1em;
     filter: drop-shadow(0px 0px 5px #5ca3ffae);
@@ -174,7 +174,7 @@ nav ul li a:hover {
         opacity: 1;
         visibility: visible;
     }
-    .redes-sociales img:hover{
+    .social-links img:hover{
         filter: drop-shadow(0px 0px 6px var(--color-2));
         scale: 1.2;
     }
@@ -195,7 +195,7 @@ nav ul li a:hover {
         padding: 5%;
     }
 
-    .redes-sociales img{
+    .social-links img{
         filter: drop-shadow(0px 0px 6px #5a95e3a8);  
     }
 
@@ -295,7 +295,7 @@ h4.animation-finished::after {
         margin: 1.5em auto;
     }
     
-    .redes-sociales{
+    .social-links{
         display: flex;
         justify-content: center;
         padding: 2em;
@@ -303,7 +303,7 @@ h4.animation-finished::after {
         margin: 1em;
     }
 
-    .redes-sociales img{
+    .social-links img{
         width: 3em;
     }
 }
@@ -314,12 +314,15 @@ h4.animation-finished::after {
         
         min-height: 200px;        
     }
-    .redes-sociales img{
+    .social-links img{
         width: 2.5em;
     }
 
     #typewriter{
         font-size: 0.8rem;
+    }
+    header{
+        margin: 10px;
     }
 }
 
