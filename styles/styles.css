@@ -10,6 +10,7 @@
     --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
 }
 
+
 body {
     font-family: monospace;
     margin: 0;
@@ -104,6 +105,7 @@ nav ul li a:hover {
     gap: 2em;
 }
 
+
  .project-item:hover img {
     box-shadow: 5px 5px 5px black;
     transform: scale(1.1);
@@ -142,6 +144,17 @@ nav ul li a:hover {
 }
 
 
+.hover-text {
+visibility: hidden;
+color: white;
+width: 100%;
+z-index: 10;
+position: absolute;
+top: 47%;
+text-transform: uppercase;
+font-size: 2em;
+text-align: center;
+}
 
 /*SE APLICA SOLO A DISPOSITIVOS CAPACES DE HACER HOVER*/
 @media (hover: hover){
@@ -150,51 +163,25 @@ nav ul li a:hover {
         filter: brightness(140%);
         position: relative;
         filter: drop-shadow(0px 0px 10px #5ca3ffb2);
-
     }
-    
-    .hover-text {
-        text-transform:uppercase;
-        font-size: 2em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s;
-        z-index: 2; /* Asegura que el texto esté por encima de la imagen en el estado hover */
 
-    }
-    
     .project-item:hover .hover-text {
         opacity: 1;
         visibility: visible;
+        transform: translate(-50%, -50%);
+
     }
     .social-links img:hover{
         filter: drop-shadow(0px 0px 6px var(--color-2));
         scale: 1.2;
     }
-
 }
+
 /*Se aplica a dispositivos que no son capaces de hacer hover (Smartphone, etc)*/
 @media (hover: none){
     .hover-text {
-        text-transform:uppercase;
-        font-size: 2em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: var(--color-1);
-        text-align: center;
-        background-color: #00000057;
-        padding: 5%;
-        border-radius: 10px;
+        visibility: visible;
     }
-
     .social-links img{
         filter: drop-shadow(0px 0px 6px #5a95e3a8);  
     }
@@ -266,7 +253,7 @@ h4.animation-finished::after {
     .project-item img {
         
         margin: 0 auto;
-        max-width: 90%; 
+        max-width: 85%; 
 
     }
 

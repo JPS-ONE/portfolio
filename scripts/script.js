@@ -1,3 +1,16 @@
+// import Atropos library
+import Atropos from 'atropos';
+import 'atropos/css'
+
+// Initialize Atropos for each project item
+document.querySelectorAll('.my-atropos').forEach((element) => {
+    Atropos({
+      el: element,
+      activeOffset: 80,
+      shadowScale: 1.5,
+    });
+  });
+
 // Obtén el elemento <h4> por su ID
 const textElement = document.getElementById('typewriter');
 
