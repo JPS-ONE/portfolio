@@ -8,6 +8,7 @@ document.querySelectorAll('.my-atropos').forEach((element) => {
       el: element,
       activeOffset: 80,
       shadowScale: 1.5,
+      rotateTouch: 'scroll-y'
     });
   });
 
