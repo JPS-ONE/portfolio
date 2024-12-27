@@ -128,7 +128,7 @@ main{
 
 
 .description{
-    margin: 2rem 0;
+    margin: 2rem 1rem;
 }
 
 .tech{
@@ -200,6 +200,7 @@ main{
 .fa-angular { color: #dd0031; }
 .fa-node-js { color: #68A063; }
 .fa-leaf { color: #4DB33D; }
+.fa-vuejs{color: #63E6BE;} 
 
 
 @media (width < 1200px){
