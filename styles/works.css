@@ -157,42 +157,36 @@ main{
 }
 
 .button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1em;
     background-color: #ffffff00;
     color: #fff;
     width: 9em;
     height: 3em;
     border: var(--color-5) 0.2em solid;
     border-radius: 11px;
-    text-align: right;
+    text-align: center; 
     transition: all 0.6s ease;
-  }
-  
-  .button:hover {
+    text-decoration: none; 
+}
+
+.button:hover {
     background-color: #0a2eff;
     cursor: pointer;
-  }
-  
-  .button svg {
-    width: 1.6em;
-    margin: -0.2em 0.8em 1em;
-    position: absolute;
-    display: flex;
-    transition: all 0.6s ease;
-  }
-  
-  .button:hover svg {
-    transform: translateX(5px);
-  }
-  
-  .text {
-    margin: 0 1.5em
-  }
+}
 
-  button a{
-    text-decoration: none;
-    color: var(--color-1);
-    margin: 0 1rem;
-  }
+.button svg {
+    width: 1.6em;
+    transition: all 0.6s ease;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+
 
 .fa-html5 { color: #e34f26; }
 .fa-css3-alt { color: #264de4; }
