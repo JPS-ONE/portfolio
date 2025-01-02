@@ -47,7 +47,7 @@ nav ul li a {
 nav ul li a:hover {
 
     border-color: var(--color-1);
-	text-shadow: 0 0 5px var(--color-2), 0 0 20px var(--color-2), 0 0 30px var(--color-2);
+    animation:  glitch 0.5s ease-out;
 }
 
 .logo {
@@ -60,12 +60,31 @@ nav ul li a:hover {
     fill: var(--color-2); 
 }
 
-.logo svg:hover{
-
-    scale: 1.1;
-    filter: drop-shadow(5px 5px 5px rgba(234, 167, 234, 0.503));
-    animation: shake 0.5s ease; 
+.logo svg:hover {
+    animation: shake 0.5s ease, glitch 0.5s ease-out;
 }
+
+@keyframes glitch {
+    0% {
+        filter: drop-shadow(0 0 0 white);
+    }
+    20% {
+        filter: drop-shadow(2px -2px 0 red);
+    }
+    40% {
+        filter: drop-shadow(-2px 2px 0 green);
+    }
+    60% {
+        filter: drop-shadow(2px 2px 0 blue);
+    }
+    80% {
+        filter: drop-shadow(-2px -2px 0 green);
+    }
+    100% {
+        filter: drop-shadow(0 0 0 white);
+    }
+}
+
 
 .texto{   
     align-items: center;
@@ -111,6 +130,7 @@ nav ul li a:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease; 
     filter: brightness(140%);
+    
 }
 
 
@@ -137,10 +157,14 @@ nav ul li a:hover {
     margin-top: 2em;
 }
 
+.social-links img:hover{
+    filter: drop-shadow(0px 0px 10px #5ca3ffae);
+
+}
+
 .social-links img{
     width: 4em;
     margin: 1em;
-    filter: drop-shadow(0px 0px 5px #5ca3ffae);
 }
 
 
@@ -154,6 +178,7 @@ top: 47%;
 text-transform: uppercase;
 font-size: 2em;
 text-align: center;
+
 }
 
 /*SE APLICA SOLO A DISPOSITIVOS CAPACES DE HACER HOVER*/
@@ -162,6 +187,7 @@ text-align: center;
         transform: scale(1.1);
         filter: brightness(140%);
         position: relative;
+        
     }
 
     .project-item:hover .hover-text {
