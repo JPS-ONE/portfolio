@@ -1,166 +1,352 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work</title>
-    <link rel="stylesheet" href="styles/works.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/works.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <!-- Si queremos que el logo sea una imagen -->
-            <!-- <img src="resources\logo.svg" alt="Logo"> -->
-            <a href="/">
-                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 711.59 141.22">
-                    <g>
-                      <path class="cls-1" d="m32.29,69.8l62.67,70.2h-32.96L0,70.2,62,0h32.96l-62.67,69.8Z"/>
-                      <path class="cls-1" d="m126.6,140l-18-20.6h77V34.52L227,0v140h-100.4Z"/>
-                      <path class="cls-1" d="m309.66,90.4v49.6h-42V0h155v90.4h-113Zm-.4-69.8v49.2h71.4V20.6h-71.4Z"/>
-                      <path class="cls-1" d="m603,118.8l-31.6,21.2-134.51,1.22,12.9-21.82h99.4l7.4-8.6v-30.6h-110.6V22.2L465,0h134.2l-17.6,20.6h-81l-9,10.2v28.8h111.4v59.2Z"/>
-                      <path class="cls-1" d="m619.52.4h30.08l62,70-62,69.6-31.19-.67,62.44-68.72L619.52.4Z"/>
-                    </g>
-                    <line class="cls-1" x1="317" y1="140" x2="316.6" y2="118.73"/>
-                  </svg>
-            </a>          
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/works" style="text-decoration: underline;">Works</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <!-- Si queremos que el logo sea una imagen -->
+        <!-- <img src="resources\logo.svg" alt="Logo"> -->
+        <a href="/">
+          <svg
+            id="Capa_1"
+            data-name="Capa 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 711.59 141.22"
+          >
+            <g>
+              <path
+                class="cls-1"
+                d="m32.29,69.8l62.67,70.2h-32.96L0,70.2,62,0h32.96l-62.67,69.8Z"
+              />
+              <path
+                class="cls-1"
+                d="m126.6,140l-18-20.6h77V34.52L227,0v140h-100.4Z"
+              />
+              <path
+                class="cls-1"
+                d="m309.66,90.4v49.6h-42V0h155v90.4h-113Zm-.4-69.8v49.2h71.4V20.6h-71.4Z"
+              />
+              <path
+                class="cls-1"
+                d="m603,118.8l-31.6,21.2-134.51,1.22,12.9-21.82h99.4l7.4-8.6v-30.6h-110.6V22.2L465,0h134.2l-17.6,20.6h-81l-9,10.2v28.8h111.4v59.2Z"
+              />
+              <path
+                class="cls-1"
+                d="m619.52.4h30.08l62,70-62,69.6-31.19-.67,62.44-68.72L619.52.4Z"
+              />
+            </g>
+            <line class="cls-1" x1="317" y1="140" x2="316.6" y2="118.73" />
+          </svg>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/works" style="text-decoration: underline">Works</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="main-container">
-        <div class="grid-background"></div>
-        <div class="shine"></div>
+      <div class="grid-background"></div>
+      <div class="shine"></div>
     </div>
     <main>
-        <section class="works-list">
-            <div class="work">
-                <img class="mockup" src="resources/notesong-mockup.webp" alt="">
-                <div class="works-text">
-                    <div>
-                        <p class="description">NoteSong es una aplicación web que permite a compositores escribir y organizar sus letras de canciones ofreciendo herramientas específicas, ya sea localmente o en la nube. Ofrece sincronización en tiempo real, autenticación segura con JWT, y soporte offline utilizando localStorage. </p>
-                    </div>
-                    <div class="tech">
-                        <div class="tech-item">
-                            <i class="fab fa-angular"></i>
-                            <p>Angular</p>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-node-js"></i>
-                            <p>Node.js</p>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-leaf"></i>
-                            <p>MongoDB</p>
-                        </div>
-                    </div>  
-                    <div class="btn-container">
-                        <a href="https://app.notesong.com/" class="button" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                            </svg>
-                            <span class="text">Demo</span>
-                        </a>
-                    </div>                    
-                </div>   
+      <section class="works-list">
+        <div class="work">
+          <img class="mockup" src="resources/notesong-mockup.webp" alt="" />
+          <div class="works-text">
+            <div>
+              <p class="description">
+                NoteSong es una aplicación web que permite a compositores
+                escribir y organizar sus letras de canciones ofreciendo
+                herramientas específicas, ya sea localmente o en la nube. Ofrece
+                sincronización en tiempo real, autenticación segura con JWT, y
+                soporte offline utilizando localStorage.
+              </p>
             </div>
-            <div class="work">
-                <img class="mockup" src="resources/vgr.webp" alt="Viajes Grupos Reducidos website">
-                <div class="works-text">
-                    <div>
-                        <p class="description">Viajes Grupos Reducidos es una plataforma de comercio electrónico diseñada para agencias de viajes, que ofrece un sistema de calendario interactivo donde los usuarios pueden explorar fechas disponibles y precios en tiempo real. La web está optimizada para garantizar una experiencia rápida, fluida y con un excelente posicionamiento SEO, asegurando máxima visibilidad y una navegación intuitiva. </p>
-                    </div>
-                    <div class="tech">
-                        <div class="tech-item">
-                            <i class="fab fa-vuejs"></i>
-                            <p>Vue.js</p>
-                        </div>
-                        <div class="tech-item">
-                            <svg  class="w-6 h-6" viewBox="0 0 24 24" fill="deepskyblue">
-                                <path d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C13.387 10.842 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C15.613 7.158 14.478 6 12 6.036zm-5 6c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C8.387 16.842 9.522 18 12 18c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C10.613 13.158 9.478 12 7 12z"/>
-                            </svg>
-                            <p>Tailwind</p>
-                        </div>
-                    </div>  
-                    <div class="btn-container">
-                        <a href="https://viajesgruposreducidos.com/" class="button" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                            </svg>
-                            <span class="text">Visit</span>
-                        </a>
-                    </div>
-                    
-                </div>   
+            <div class="tech">
+              <div class="tech-item">
+                <i class="fab fa-angular"></i>
+                <p>Angular</p>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-leaf"></i>
+                <p>MongoDB</p>
+              </div>
             </div>
-            <div class="work">
-                <img class="mockup" src="resources/tripalicante.webp" alt="Trip Alicante website">
-                <div class="works-text">
-                    <div>
-                        <p class="description">
-                            Trip Alicante es una web para una agencia de viajes con presencia digital creada con Astro, enfocada en ofrecer experiencias únicas por la costa mediterránea. Su plataforma está diseñada para ser ultrarrápida, accesible y optimizada para motores de búsqueda, lo que permite a los usuarios explorar fácilmente los diferentes destinos, actividades y paquetes turísticos disponibles en Alicante y alrededores.
-                        </p>
-                    </div>
-                    <div class="tech">
-                        <div class="tech-item">
-                            <img src="resources/astrojs.svg" alt="Astro logo" style="max-width: 42px;"/>
+            <div class="btn-container">
+              <a
+                href="https://app.notesong.com/"
+                class="button"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  ></path>
+                </svg>
+                <span class="text">Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <img
+            class="mockup"
+            src="resources/vgr.webp"
+            alt="Viajes Grupos Reducidos website"
+          />
+          <div class="works-text">
+            <div>
+              <p class="description">
+                Viajes Grupos Reducidos es una plataforma de comercio
+                electrónico diseñada para agencias de viajes, que ofrece un
+                sistema de calendario interactivo donde los usuarios pueden
+                explorar fechas disponibles y precios en tiempo real. La web
+                está optimizada para garantizar una experiencia rápida, fluida y
+                con un excelente posicionamiento SEO, asegurando máxima
+                visibilidad y una navegación intuitiva.
+              </p>
+            </div>
+            <div class="tech">
+              <div class="tech-item">
+                <i class="fab fa-vuejs"></i>
+                <p>Vue.js</p>
+              </div>
+              <div class="tech-item">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="deepskyblue">
+                  <path
+                    d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C13.387 10.842 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C15.613 7.158 14.478 6 12 6.036zm-5 6c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C8.387 16.842 9.522 18 12 18c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C10.613 13.158 9.478 12 7 12z"
+                  />
+                </svg>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="btn-container">
+              <a
+                href="https://viajesgruposreducidos.com/"
+                class="button"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  ></path>
+                </svg>
+                <span class="text">Visit</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <img
+            class="mockup"
+            src="resources/tripalicante.webp"
+            alt="Trip Alicante website"
+          />
+          <div class="works-text">
+            <div>
+              <p class="description">
+                Trip Alicante es una web para una agencia de viajes con
+                presencia digital creada con Astro, enfocada en ofrecer
+                experiencias únicas por la costa mediterránea. Su plataforma
+                está diseñada para ser ultrarrápida, accesible y optimizada para
+                motores de búsqueda, lo que permite a los usuarios explorar
+                fácilmente los diferentes destinos, actividades y paquetes
+                turísticos disponibles en Alicante y alrededores.
+              </p>
+            </div>
+            <div class="tech">
+              <div class="tech-item">
+                <img
+                  src="resources/astrojs.svg"
+                  alt="Astro logo"
+                  style="max-width: 42px"
+                />
+                <p>Astro</p>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="tech-item">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="deepskyblue">
+                  <path
+                    d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C13.387 10.842 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C15.613 7.158 14.478 6 12 6.036zm-5 6c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C8.387 16.842 9.522 18 12 18c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C10.613 13.158 9.478 12 7 12z"
+                  />
+                </svg>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="btn-container">
+              <a
+                href="https://tripalicante.com/"
+                class="button"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  ></path>
+                </svg>
+                <span class="text">Visit</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <img
+            class="mockup"
+            src="resources/explorercv.webp"
+            alt="ExplorerCV website"
+          />
+          <div class="works-text">
+            <div>
+              <p class="description">
+                ExplorerCV es una plataforma multilingüe desarrollada con Astro,
+                pensada para agencias de viajes que operan a nivel
+                internacional. Permite mostrar destinos, paquetes y experiencias
+                de forma dinámica en varios idiomas, garantizando una navegación
+                fluida y una experiencia optimizada para SEO. Su estructura
+                modular facilita la expansión de contenido y la adaptación
+                cultural, todo con una velocidad de carga excepcional.
+              </p>
+            </div>
+            <div class="tech">
+              <div class="tech-item">
+                <img
+                  src="resources/astrojs.svg"
+                  alt="Astro logo"
+                  style="max-width: 42px"
+                />
 
-                            <p>Astro</p>
-                        </div>
-                        <div class="tech-item">
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="deepskyblue">
-                                <path d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C13.387 10.842 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C15.613 7.158 14.478 6 12 6.036zm-5 6c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C8.387 16.842 9.522 18 12 18c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C10.613 13.158 9.478 12 7 12z"/>
-                            </svg>
-                            <p>Tailwind</p>
-                        </div>
-                    </div>  
-                    <div class="btn-container">
-                        <a href="https://tripalicante.com/" class="button" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                            </svg>
-                            <span class="text">Visit</span>
-                        </a>
-                    </div>
-                </div>   
+                <p>Astro</p>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="tech-item">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="deepskyblue">
+                  <path
+                    d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C13.387 10.842 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C15.613 7.158 14.478 6 12 6.036zm-5 6c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.91 1.344C8.387 16.842 9.522 18 12 18c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.91-1.344C10.613 13.158 9.478 12 7 12z"
+                  />
+                </svg>
+                <p>Tailwind</p>
+              </div>
             </div>
-            
-            <div class="work"> 
-                <img class="mockup" src="resources/masonry-album.webp" alt="">
-                <div class="works-text">
-                    <div>
-                        <p class="description">Galería local de imágenes estilo masonry implementada con JavaScript vanilla y CSS Grid. Utiliza lazy loading para optimizar el rendimiento y un sistema de redimensionamiento dinámico para mantener el layout masonry. Incluye una funcionalidad de popup para ver las imágenes en tamaño completo.</p>
-                    </div>
-                    <div class="tech">
-                        <div class="tech-item">
-                            <i class="fab fa-html5"></i>
-                            <p>HTML5</p>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <p>CSS3</p>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-js"></i>
-                            <p>JavaScript</p>
-                        </div>
-                    </div>  
-                    <div class="btn-container">
-                        <a href="https://jps-one.github.io/masonry-local-album/" class="button" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                            </svg>
-                            <span class="text">Demo</span>
-                        </a>
-                    </div>                    
-                </div>   
+            <div class="btn-container">
+              <a href="https://explorercv.com/" class="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  ></path>
+                </svg>
+                <span class="text">Visit</span>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+
+        <div class="work">
+          <img class="mockup" src="resources/masonry-album.webp" alt="" />
+          <div class="works-text">
+            <div>
+              <p class="description">
+                Galería local de imágenes estilo masonry implementada con
+                JavaScript vanilla y CSS Grid. Utiliza lazy loading para
+                optimizar el rendimiento y un sistema de redimensionamiento
+                dinámico para mantener el layout masonry. Incluye una
+                funcionalidad de popup para ver las imágenes en tamaño completo.
+              </p>
+            </div>
+            <div class="tech">
+              <div class="tech-item">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="btn-container">
+              <a
+                href="https://jps-one.github.io/masonry-local-album/"
+                class="button"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  ></path>
+                </svg>
+                <span class="text">Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
