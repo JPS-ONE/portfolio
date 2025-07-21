@@ -10,10 +10,19 @@
     --degradado-3: linear-gradient(to right, var(--color-3), var(--color-4));
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 
 body {
     font-family: monospace;
     padding: 0;
+    margin: 0;
     background-color:var(--color-4);
 
 }
@@ -22,8 +31,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     pointer-events: none;
   }
