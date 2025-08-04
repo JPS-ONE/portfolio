@@ -1,6 +1,8 @@
 // import Atropos library
 import Atropos from 'atropos';
 import 'atropos/css'
+import './light-effect.js';
+
 
 // Initialize Atropos for each project item
 document.querySelectorAll('.my-atropos').forEach((element) => {
