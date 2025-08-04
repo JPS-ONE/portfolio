@@ -60,6 +60,15 @@ header {
     min-width: 100vw;
   }
 
+  .light-effect {
+    position: fixed;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at center, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+    transition: transform 100ms ease-out;
+  }
+
 
 nav ul {
     list-style-type: none;

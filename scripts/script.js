@@ -40,13 +40,4 @@ function typeWriter(text, i) {
 // Inicia la animación de máquina de escribir
 typeWriter(fullText, 0);
 
-// Event listener para el efecto de luz
-const lightEffect = document.getElementById('lightEffect');
-
-function handleMouseMove(e) {
-  const x = e.clientX;
-  const y = e.clientY;
-  lightEffect.style.transform = `translate(${x - 500}px, ${y - 500}px)`;
-}
-
-window.addEventListener('mousemove', handleMouseMove);
+// El efecto de luz ahora se maneja en light-effect.js
