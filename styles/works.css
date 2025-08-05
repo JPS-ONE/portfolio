@@ -181,11 +181,22 @@ main{
     }
 }
 
-.tech-item{
+.tech-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+.tech-item svg {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto;
+    display: block;
+
+  }
+  
 
 .btn-container{
     display: flex;
